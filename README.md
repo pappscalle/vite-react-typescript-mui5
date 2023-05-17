@@ -12,7 +12,7 @@ npm install @mui/material @emotion/react @emotion/styled
 ```
 Start the project ...
 ```
-npm dev run
+npm run dev
 ```
 ...and open it in a browser.
 
