@@ -1,5 +1,5 @@
 ## vite-react-typescript-mui5
-Setting up a Vite + React + Typescript + MUI 5 project
+Setting up a Vite + React + Typescript + MUI 5 + vitest + jest matchers project
 
 ### setting up vite
 
