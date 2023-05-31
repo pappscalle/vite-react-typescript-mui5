@@ -120,7 +120,7 @@ afterEach(() => {
 });
 ```
 
-in vite.config.ts add 
+in `vite.config.ts` add 
 
 ```
 export default defineConfig({
