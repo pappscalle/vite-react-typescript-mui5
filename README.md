@@ -93,3 +93,42 @@ module.exports = {
   "bracketSpacing": true
 }
 ```
+
+### Setting up vitest
+
+```
+npm install vitest --save-dev
+```
+
+add `"test": "vitest",` to package.json (undr scripts"
+
+```
+npm install jsdom --save-dev
+npm install @testing-library/react @testing-library/jest-dom --save-dev
+```
+create a file `tests/setup.js` and add the following:
+
+```
+import { expect, afterEach } from 'vitest';
+import { cleanup } from '@testing-library/react';
+import matchers from '@testing-library/jest-dom/matchers';
+
+expect.extend(matchers);
+
+afterEach(() => {
+  cleanup();
+});
+```
+
+in vite.config.ts add 
+
+```
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './tests/setup.js',
+  },
+});
+```
