@@ -132,3 +132,26 @@ export default defineConfig({
   },
 });
 ```
+### Setting up json-server
+
+```
+npm install json-server
+```
+
+create a file `data/db.json` with the following content:
+
+```
+{
+  "books": []
+}
+```
+
+add the following script to `package.json`
+```
+"server": "json-server -p 3001 --watch data/db.json",
+```
+
+start the server bu running
+```
+npm run server
+```
