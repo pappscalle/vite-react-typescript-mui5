@@ -1,5 +1,12 @@
 ## vite-react-typescript-mui5
-Setting up a Vite + React + Typescript + MUI 5 + vitest + jest matchers project
+How to setup  
+* Vite
+* React
+* Typescript 
+* MUI 5 
+* vitest
+* jest matchers
+* json-server 
 
 ### setting up vite
 
@@ -142,7 +149,7 @@ create a file `data/db.json` with the following content:
 
 ```
 {
-  "books": []
+  "items": []
 }
 ```
 
