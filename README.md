@@ -83,8 +83,8 @@ in `.eslintignore`
 ```
 node_modules/
 dist/
-.prettierrc.js
-.eslintrc.js
+.prettierrc.cjs
+.eslintrc.cjs
 env.d.ts
 ```
 ### setting up prettier
